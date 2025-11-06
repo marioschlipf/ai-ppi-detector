@@ -14,3 +14,5 @@ class PIIDetection(BaseModel):
 class PIIDetectionResponse(BaseModel):
     detections: List[PIIDetection]
 
+class FileContentResponse(BaseModel):
+    text: str
