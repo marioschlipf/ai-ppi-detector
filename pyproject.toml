@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pii-detection"
+version = "0.1.0"
+description = "PII detection service using FastAPI and GLiNER"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.14"
+fastapi = "^0.121.0"
+uvicorn = "^0.38.0"
+pydantic = "^2.12.4"
+gliner = "^0.2.22"
+spacy = "^3.8.7"
+spacy-transformers = "^1.3.9"
+torch = "^2.9.0"
+transformers = "<4.50.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
