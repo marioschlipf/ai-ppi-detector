@@ -10,13 +10,13 @@ WORKDIR /code
 # Set python path
 ENV PYTHONPATH=/code
 
-# Copy your application code
-COPY ./app /code/app
+# Copy requirements and install dependencies
 COPY ./requirements.txt /code/
-
-# Install dependencies
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy your application code
+COPY ./app /code/app
 
 
 # Expose port and run the application
